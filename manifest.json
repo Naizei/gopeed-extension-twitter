@@ -4,7 +4,7 @@
   "title": "Twitter",
   "description": "Twitter media download, support video, gif, image, etc.",
   "icon": "icon.png",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/monkeyWie/gopeed-extension-twitter",
   "repository": {
     "url": "https://github.com/monkeyWie/gopeed-extension-twitter"
@@ -13,9 +13,7 @@
     {
       "event": "onResolve",
       "match": {
-        "urls": [
-          "*://twitter.com/*/status/*"
-        ]
+        "urls": ["*://twitter.com/*/status/*", "*://x.com/*/status/*"]
       },
       "entry": "dist/index.js"
     }
